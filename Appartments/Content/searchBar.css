@@ -1,0 +1,69 @@
+.searchBar{
+    
+    width: 900px;
+    
+    margin-top: 50px;
+    
+    height: 50px;
+    
+    background: #ffffff;
+    
+    margin-right: auto;
+    
+    margin-left: auto;
+    
+    box-shadow:0px 1px 3px #2F4F4F;
+}
+
+
+.searchUl{
+    padding-left: 0px;
+    
+    display: flex;
+   
+    
+  list-style-type: none;
+}
+
+
+.locationIcon{
+    
+    height: 25px;
+}
+
+.downIcon{
+    
+    width: 20px;
+    
+}
+
+.searchBarUnit{
+    
+    height: 50px;
+    
+   
+    
+}
+
+
+.rightFloat{
+    
+    clear: right;
+    
+    
+  
+    background: #ff0000;
+}
+
+.searchBarUnit:Hover{
+    
+    height: 50px;
+
+    background: #cfcfcf;
+    
+    
+     -webkit-transition: 700ms ease all;
+    -moz-transition: 700ms ease all;
+    -o-transition: 700ms ease all;
+    transition: 700ms ease all;
+}

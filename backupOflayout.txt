@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>@ViewBag.Title</title>
+
+   
+
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-cookies.min.js"></script>
+     <script src="https://code.angularjs.org/1.4.7/angular-route.min.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="/Content/Site.css">
+
+
+    
+    <script src="./Content/layoutAngularJs.js"></script>
+    <script src="./Content/authFact.js"></script>
+<!--    <script src="./Content/testController.js"></script>-->
+    
+    <script src="./Content/HomeRoutes.js"></script>
+  
+
+</head>
+<body ng-app="HomePageApp"  ng-controller="HomePageController">
+
+
+       <div  class="headerwrap">
+            <nav class="headernav">
+                <ul class="headerlinelist">
+                        
+                    <li class="logo">
+                        <a>Appartments.com
+                        </a>
+                    </li>
+
+
+                     <li class="tabContent">
+                        <a>Edit Profile
+                        </a>
+                    </li>
+
+                     <li class="tabContent">
+                        <a>Favorites
+                        </a>
+                    </li>
+
+                     <li class="tabContent">
+                        <a>Find Roomates
+                        </a>
+                    </li>
+                    
+                     <li class="tabContent">
+                        <a ng-click="fbLogin()">{{fbLoginText}}
+                        </a>
+                    </li>
+
+
+                    <li  class="logandsign">
+                        <a class="logandsignlist"  ng-click="signupchangefunc()"   href=""
+                          ><font  implimenter='signupchange' signchanger>SIGN UP</font></a>
+                             <ul ng-click="test()" implimenter='signupchange'  showsignup  class="signupopen">
+                                <img class="extentionsignup" src="./gfx/extention.svg"/>
+                                 <form class="signUpForm" name="signUpForm"  data-ng-submit="sendForm()">
+                                <li class="splitfield">
+                                    <input     type="text" 
+                                               ng-model="c.FirstName"
+                                               class="namefield"
+                                               size="35" 
+                                               onfocus="if(this.value == 'First Name') {
+                                                            this.value = '';
+                                                            this.style.color='#6460c4';
+                                                         }"
+                                               onblur="if(this.value == '') {
+                                                            this.value = 'First Name';
+                                                            this.style.color='#cfcfcf';
+                                                 }"
+                                           
+                                           
+                                           />
+                                    <input     type="text" 
+                                               class="namefield"
+                                               ng-model="c.LastName"
+                                               size="35" 
+                                               value="Last Name" 
+                                               onfocus="if(this.value == 'Last Name') {
+                                                            this.value = '';
+                                                            this.style.color='#6460c4';
+                                                         }"
+                                               onblur="if(this.value == '') {
+                                                            this.value = 'Last Name';
+                                                            this.style.color='#cfcfcf';
+                                                 }"/>
+                                </li>
+                                <li class="nonsplit" >
+                                    <input     type="text" 
+                                                ng-model="c.Email"
+                                               class="normalfiled"
+                                               size="35" 
+                                               value="Email" 
+                                               onfocus="if(this.value == 'Email') {
+                                                            this.value = '';
+                                                            this.style.color='#6460c4';
+                                                         }"
+                                               onblur="if(this.value == '') {
+                                                            this.value = 'Email';
+                                                            this.style.color='#cfcfcf';
+                                                 }"/>
+                                </li>
+                                 <li class="nonsplit">
+                                    <input     type="text" 
+                                                ng-model="c.password"
+                                               class="normalfiled"
+                                               size="35" 
+                                               value="Password" 
+                                               onfocus="if(this.value == 'Password') {
+                                                            this.value = '';
+                                                            this.style.color='#6460c4';
+                                                         }"
+                                               onblur="if(this.value == '') {
+                                                            this.value = 'Password';
+                                                            this.style.color='#cfcfcf';
+                                                 }"/>
+                                </li>
+                                 <li class="nonsplit">
+                                      <input   type="text" 
+                                               class="normalfiled"
+                                                ng-model="c.rePassword"
+                                               size="35" 
+                                               value="Re-Password" 
+                                               onfocus="if(this.value == 'Re-Password') {
+                                                            this.value = '';
+                                                            this.style.color='#6460c4';
+                                                         }"
+                                               onblur="if(this.value == '') {
+                                                            this.value = 'Re-Password';
+                                                            this.style.color='#cfcfcf';
+                                                 }"/>
+
+                                 </li >
+
+                                 <li  class="signfooter" >
+                                      
+                                             <a  class="signradio" href="" ng-click="signtoggle()"
+                                                ng-repeat="customertype in customertypes">
+                                             <img class="signupradio" src={{signradio}} />
+                                             <font class="{{signtoggleclass}}" >{{customertype}}</font></a>
+                                     
+                                             <a  style="padding-right:16;" class="signsumbit"  href="" 
+                                               ng-click="signupchangefunc()" >
+                                             <font class="signsumbitfont">CANCEL</font></a>
+                                     
+                                            
+                                             <a   style="padding-right:16;"  class="signsumbit"  href="" ng-click="userSubmit(c)">
+                                             <font class="signsumbitfont" >NEXT</font></a>
+                                 </li>
+                                     </form>
+                            </ul>
+                    </li>
+                    
+                     <li  class="logandsign">
+                        <a class="logandsignlist"  ng-click="loginchangefunc()" href=""
+                          ><font  implimenter='loginchange'  logchanger >LOGIN</font></a>
+                             <ul  implimenter='loginchange'  showlogin  class="loginopen">
+                                <img class="extentionsignup" src="./gfx/extention.svg"/>
+                                 <form class="loginForm">
+                                <li class="nonsplit" >
+                                    <input     type="text" 
+                                               class="normalfiled"
+                                               size="35" 
+                                               value="Email" 
+                                               onfocus="if(this.value == 'Email') {
+                                                            this.value = '';
+                                                            this.style.color='#6460c4';
+                                                         }"
+                                               onblur="if(this.value == '') {
+                                                            this.value = 'Email';
+                                                            this.style.color='#cfcfcf';
+                                                 }"/>
+
+                                </li>
+
+                                 <li class="lognonsplit">
+                                    <input     type="text" 
+                                               class="normalfiled"
+                                               size="35" 
+                                               value="Password" 
+                                               onfocus="if(this.value == 'Password') {
+                                                            this.value = '';
+                                                            this.style.color='#6460c4';
+                                                         }"
+                                               onblur="if(this.value == '') {
+                                                            this.value = 'Password';
+                                                            this.style.color='#cfcfcf';
+                                                 }"/>
+                                </li>
+                              
+                                 <li  class="logfooter" >
+                                             <a  style="padding-right:16;" class="signsumbit"  href="" 
+                                                ng-click="loginchangefunc()" >
+                                             <font class="signsumbitfont">CANCEL</font></a>
+                                             <a   style="padding-right:16;"  class="signsumbit"  href="" ng-click="()">
+                                             <font class="signsumbitfont" >NEXT</font></a>
+                                 </li>
+                                     </form>
+                            </ul>
+                       </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

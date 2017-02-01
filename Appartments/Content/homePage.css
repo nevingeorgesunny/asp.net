@@ -1,0 +1,450 @@
+.body{
+    
+   background: #6460c4;
+   padding: 0;
+   margin: 0;
+            padding-top:0;
+            z-index: 0;
+}
+
+.formBody{
+    
+    background: #ffffff;
+    height: 700px;
+   
+   
+}
+
+.formUnit2{
+    
+      display:flex;
+    list-style-type: none;
+    
+    background: #555555;
+    height: 700px;
+    
+    margin-left: 0px;
+    
+  
+}
+
+
+.formUnit{
+    
+      display:flex;
+    list-style-type: none;
+    
+    height: 500px;
+    
+    margin-left: 0px;
+    
+  
+}
+
+.formList{
+    
+    padding-left: 0px;
+}
+
+.formFragment2{
+    
+    width: 50%;
+    height: 500px;
+    
+    background: #f7f7f7;
+   
+    
+}
+
+
+.formFragment133{
+    
+     background: #f7f7f7;
+    
+    text-align: center;
+    
+    width: 50%;
+    height: 700px;
+   
+    
+}
+
+
+.formFragment233{
+  
+    
+    width: 50%;
+    height: 700px;
+    
+    background: #f7f7f7;
+   
+    
+}
+
+
+
+
+
+.formFragment1{
+    
+       background: #f7f7f7;
+    
+    text-align: center;
+    
+    width: 50%;
+    height: 500px;
+   
+    
+}
+
+
+.formFragment22{
+    
+    margin-left: 70px;
+    
+    width: 50%;
+    height: 500px;
+    
+    background: #555555;
+   
+    
+}
+
+.formFragment12{
+    
+       background: #555555;
+    
+    text-align: center;
+    
+    width: 50%;
+    height: 500px;
+   
+    
+}
+
+
+.formFragment2kaContent{
+    
+     width: 100%;
+    
+    height: 50%;
+    
+    margin-right: 0px;
+    
+    margin-left: 20px;
+    
+    margin-top: 60px;
+    
+   
+    
+    
+}
+
+
+.fromIMages{
+    
+    margin: auto;
+    
+    margin-top: 100px;
+}
+
+.innerlist{
+    
+    list-style-type: none;
+    
+    
+}
+
+.innerlistLine2{
+    
+    margin-top: 30px;
+     list-style-type: none;
+    
+     display: flex;
+    
+  
+    
+}
+
+.formfragTitle1{
+    
+    font-size: 40.02px;
+    
+    color: #6460c4;
+    
+    
+    font-family:'Microsoft New Tai Lue';
+    
+    
+}
+
+
+.formfragTitle12{
+    
+    font-size: 40.02px;
+    
+    color: #ffffff;
+    
+    
+    font-family:'Microsoft New Tai Lue';
+    
+    
+}
+
+input[type=checkbox] {
+  /* All browsers except webkit*/
+  transform: scale(1.5);
+
+  /* Webkit browsers*/
+  -webkit-transform: scale(1.5);
+}
+
+
+.checkOne{
+    
+    margin-right: 16px;
+    
+    margin-top: 20px;
+}
+
+.checkTwo{
+    
+    
+     margin-right: 16px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.lThird{
+    margin-top: 8px;
+}
+
+
+.lThird2{
+    
+    
+    margin-top: 8px;
+   margin-left: 60px;
+    
+}
+
+
+
+.formCheckBoxLabel{
+    
+    
+     font-size: 23.02px;
+    
+    color: #6460c4;
+    
+    
+    font-family:'Microsoft New Tai Lue';
+    
+    
+    
+}
+
+
+
+
+.formfragLabel2{
+    
+    
+     font-size: 15.02px;
+    
+    color: #ffffff;
+    
+    
+    font-family:'Microsoft New Tai Lue';
+    
+    
+    
+}
+
+
+.formfragLabel{
+    
+    
+     font-size: 15.02px;
+    
+    color: #6460c4;
+    
+    
+    font-family:'Microsoft New Tai Lue';
+    
+    
+    
+}
+
+
+.formNorm{
+    
+     margin-top: 8px;
+      background: #f7f7f7;  
+  width:530px;
+    
+     font-size: 28px;
+    
+      font-family:'Microsoft New Tai Lue';
+/*         font-family:'Ek Mukta';*/
+   border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #6460c4;
+    
+}
+
+
+
+.formNorm2{
+    
+     margin-top: 8px;
+      background: #555555;  
+  width:530px;
+    
+    color: #ffffff;
+    
+     font-size: 28px;
+    
+      font-family:'Microsoft New Tai Lue';
+/*         font-family:'Ek Mukta';*/
+   border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #ffffff;
+    
+}
+
+
+
+.formFirstName2dd .select {
+ 
+    
+     background: #555555;  
+}
+
+
+
+.llsubmit{
+    
+    
+   margin-top: 30px;
+    
+    color: #ffffff;
+    
+    width: 300px;
+    
+    height: 75px;
+    
+    font-size: 30px;
+    
+    background: #6460c4;
+    
+    
+    border: none
+    
+    
+   
+   
+    
+}
+
+
+
+
+
+
+.formFirstName2dd{
+    
+       color: #6460c4;
+   
+    margin-top: 8px;
+     background: #555555;  
+  width:250px;
+    
+     font-size: 28px;
+    
+      font-family:'Microsoft New Tai Lue';
+/*         font-family:'Ek Mukta';*/
+   border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #ffffff;
+    
+}
+
+
+
+.formFirstName2{
+    
+     color: #ffffff;
+    
+    margin-top: 8px;
+     background: #555555;  
+  width:250px;
+    
+     font-size: 28px;
+    
+      font-family:'Microsoft New Tai Lue';
+/*         font-family:'Ek Mukta';*/
+   border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #ffffff;
+    
+}
+
+
+.saveDivision{
+    
+    text-align: center;
+    margin-top: 100px;
+    
+background: #f7f7f7;
+    
+    width: 100%;
+    height: 200px;
+}
+
+
+.formFirstName{
+    
+    margin-top: 8px;
+     background: #f7f7f7;  
+  width:250px;
+    
+     font-size: 28px;
+    
+      font-family:'Microsoft New Tai Lue';
+/*         font-family:'Ek Mukta';*/
+   border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #6460c4;
+    
+}
+
+.seconsoneshit{
+    margin-left: 26px;
+}
+
+.lFirst{
+    margin-left: 26px;
+}
+
+
+
+.saveSuccess{
+    
+    width: 100%;
+    
+    margin-top: 50px;
+    
+    margin-bottom: 50px;
+   
+    
+   text-align: center;
+        
+    
+    
+}

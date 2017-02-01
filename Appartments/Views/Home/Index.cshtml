@@ -1,0 +1,29 @@
+@{
+    ViewBag.Title = "Index";
+
+  
+}
+
+<head>
+   
+    <title>@ViewBag.Title</title>
+   <link href="@Url.Content("~/Content/homePage.css")" rel="stylesheet" type="text/css" />
+   
+   
+</head>
+
+<body class="body">
+
+
+    @if(TempData["ContentUpdateCode"] == "0"){
+        <div class="saveSuccess">
+            <img src="@Url.Content("~/gfx/saveSuccess.png")"/>
+        </div>
+    }
+    
+
+        <br/>
+    
+        <h1>HomePage</h1>
+
+</body>

@@ -1,0 +1,217 @@
+@{
+    ViewBag.Title = "AdditionForm";
+}
+
+@model Appartments.Models.Content
+
+<head>
+   
+    <title>@ViewBag.Title</title>
+  <link href="@Url.Content("~/Content/homePage.css")" rel="stylesheet" type="text/css" />
+   
+</head>
+
+<body class="body">
+
+    
+     @if (Request.IsAuthenticated) {
+     if(TempData["LimitRsponse"] != "0"){
+        using (Html.BeginForm("AdditionForm", "AddContent", FormMethod.Post, new {})){
+        <div class="formBody">
+            <ul class="formList">
+                <li class="formUnit">
+                    <div class="formFragment1">
+                        <img class="fromIMages" src="@Url.Content("~/gfx/img1.png")" />
+                    </div>
+                    <div class="formFragment2">
+                        <div class="formFragment2kaContent">
+                            <ul  class="formList">
+                                <li class="innerlist">
+                                    <span><font class="formfragTitle1">Land Loard/Agent Details</font></span>
+                                </li>
+                                 <li class="innerlistLine2">
+                                     <div class="lSecond">
+                                            <span><font class="formfragLabel">First Name</font></span><br/>
+                                            @Html.TextBoxFor(u => u.LandLordFirstName , new { @class = "formFirstName" } )
+                                      </div>
+                                     <div class="lFirst">
+                                            <span><font class="formfragLabel">Second Name</font></span><br/>
+                                            @Html.TextBoxFor(u => u.LandLordSecondName , new { @class = "formFirstName" } )
+                                      </div>
+                                </li>
+                                 <li class="innerlistLine2">
+                                      <div class="lSecond">
+                                            <span><font class="formfragLabel">Mobile Phone Number</font></span><br/>
+                                            @Html.TextBoxFor(u => u.LandLordFirstName , new { @class = "formNorm" } )
+                                      </div>
+                                </li>
+                                <li class="innerlistLine2">
+                                      <div class="lSecond">
+                                            <span><font class="formfragLabel">Email ID</font></span><br/>
+                                            @Html.TextBoxFor(u => u.LandLordFirstName , new { @class = "formNorm" } )
+                                      </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="formUnit2">
+                    <div class="formFragment22">
+                        <div class="formFragment2kaContent">
+                            <ul  class="formList">
+                                <li class="innerlist">
+                                    <span><font class="formfragTitle12">Appartment Details</font></span>
+                                </li>
+                                 <li class="innerlistLine2">
+                                      <div class="lSecond">
+                                            <span><font class="formfragLabel2">Address Line 1</font></span><br/>
+                                            @Html.TextBoxFor(u => u.addressline1 , new { @class = "formNorm2" } )
+                                      </div>
+                                </li>
+                                <li class="innerlistLine2">
+                                      <div class="lSecond">
+                                            <span><font class="formfragLabel2">Address Line 2</font></span><br/>
+                                            @Html.TextBoxFor(u => u.addressline2 , new { @class = "formNorm2" } )
+                                      </div>
+                                </li>
+                                <li class="innerlistLine2">
+                                      <div class="lSecond">
+                                            <span><font class="formfragLabel2">Address Line 3</font></span><br/>
+                                            @Html.TextBoxFor(u => u.addressline3 , new { @class = "formNorm2" } )
+                                      </div>
+                                </li>
+                                <li class="innerlistLine2">
+                                     <div class="lSecond">
+                                            <span><font class="formfragLabel2">City</font></span><br/>
+                                         @Html.TextBoxFor(u => u.city , new { @class = "formFirstName2" } )
+                                      </div>
+                                     <div class="lFirst">
+                                            <span><font class="formfragLabel2">PIN</font></span><br/>
+                                            @Html.TextBoxFor(u => u.pinCode , new { @class = "formFirstName2" } )
+                                      </div>
+                                </li>
+                                    <li class="innerlistLine2">
+                                     <div class="lSecond">
+                                            <span><font class="formfragLabel2">Number of Rooms</font></span><br/>
+                                            @Html.TextBoxFor(u => u.numberOfRooms , new { @class = "formFirstName2" } )
+                                      </div>
+                                     <div class="lFirst">
+                                            <span><font class="formfragLabel2">Number of Attached Bathrooms</font></span><br/>
+                                            @Html.TextBoxFor(u => u.numberOfAttachedBaths , new { @class = "formFirstName2" } )
+                                      </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                       <div class="formFragment12">
+                       <img class="fromIMages" src="@Url.Content("~/gfx/img1.png")" />
+                    </div>
+                </li>
+                <li class="formUnit">
+                    <div class="formFragment133">
+                        <img class="fromIMages" src="@Url.Content("~/gfx/img1.png")" />
+                    </div>
+                    <div class="formFragment233">
+                        <div class="formFragment2kaContent">
+                            <ul  class="formList">
+                                <li class="innerlist">
+                                    <span><font class="formfragTitle1">Apartment facilities/restrictions/<br/>Rent Expected</font></span>
+                                </li>
+                                 <li class="innerlistLine2">
+                                     <div class="lThird">
+                                            <span><font class="formCheckBoxLabel">Gender</font></span><br/>
+                                              @Html.CheckBoxFor(u => u.maleRestriction , new { @class = "checkOne" }) 
+                                               <span><font class="formfragLabel">Male</font></span>
+                                             @Html.CheckBoxFor(u => u.femaleRestriction , new { @class = "checkTwo" }) 
+                                               <span><font class="formfragLabel">Female</font></span>
+                                      </div>
+                                     <div class="lThird2">
+                                            <span><font class="formCheckBoxLabel">Marital Status</font></span><br/>
+                                              @Html.CheckBoxFor(u => u.maratialStatusRestrictionMaried , new { @class = "checkOne" }) 
+                                               <span><font class="formfragLabel">Married</font></span>
+                                             @Html.CheckBoxFor(u => u.maratialStatusRestrictionunMaried , new { @class = "checkTwo" }) 
+                                               <span><font class="formfragLabel">Un-Married</font></span>
+                                      </div>
+                                </li>
+                                 <li class="innerlistLine2">
+                                      <div class="lSecond">
+                                               <span><font class="formCheckBoxLabel">Facilities</font></span><br/>
+                                           @Html.CheckBoxFor(u => u.washingMcCheck , new { @class = "checkOne" }) 
+                                               <span><font class="formfragLabel">Washing Machine</font></span>
+                                             @Html.CheckBoxFor(u => u.ovenCheck , new { @class = "checkTwo" }) 
+                                               <span><font class="formfragLabel">Microwave Oven</font></span>
+                                             @Html.CheckBoxFor(u => u.AcCheck , new { @class = "checkTwo" }) 
+                                               <span><font class="formfragLabel">AC</font></span>
+                                      </div>
+                                </li>
+                                <li class="innerlistLine2">
+                                     <span><font class="formCheckBoxLabel">Rent Expected</font></span><br/>
+                                
+                                </li>
+                                <li class="innerlistLine2">
+                                              <div class="">
+                                                    <span><font class="formfragLabel">Minimum Range</font></span><br/>
+                                                     @Html.DropDownListFor(u => u.MinproposedRent, new SelectList(
+                                                  new List<Object>{ 
+                                                       new { value = 0 , text = "5,000"  },
+                                                       new { value = 1 , text = "6,000"  },
+                                                   new { value = 2 , text = "7,000"  },
+                                                   new { value = 3 , text = "8,000"  },
+                                                   new { value = 4 , text = "9,000"  },
+                                                   new { value = 5 , text = "10,000"  },
+                                                   new { value = 6 , text = "11,000"  },
+                                                   new { value = 8 , text = "12,000"  },
+                                                   new { value = 8 , text = "13,000"  },
+                                                   new { value = 9 , text = "14,000"  },
+                                                   new { value = 10 , text = "15,000"  },
+                                                    },
+                                                  "value",
+                                                  "text",
+                                                   2) , new { @class = "formFirstName2dd" })
+                                                </div>
+                                              <div class="seconsoneshit">
+                                                    <span><font class="formfragLabel">Maxium Range</font></span><br/>
+                                                      @Html.DropDownListFor(u => u.MaxproposedRent, new SelectList(
+                                                  new List<Object>{ 
+                                                       new { value = 0 , text = "5,000"  },
+                                                       new { value = 1 , text = "6,000"  },
+                                                   new { value = 2 , text = "7,000"  },
+                                                   new { value = 3 , text = "8,000"  },
+                                                   new { value = 4 , text = "9,000"  },
+                                                   new { value = 5 , text = "10,000"  },
+                                                   new { value = 6 , text = "11,000"  },
+                                                   new { value = 7 , text = "12,000"  },
+                                                   new { value = 8 , text = "13,000"  },
+                                                   new { value = 9 , text = "14,000"  },
+                                                   new { value = 10 , text = "15,000"  },
+                                                    },
+                                                  "value",
+                                                  "text",
+                                                   2) , new { @class = "formFirstName2dd" })
+                                         
+                                                </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                  <li class="formUnit">
+                     <div class="saveDivision">
+                         <input type="submit" class="llsubmit" value="Save and Proceede" />
+                      </div> 
+                </li>
+            </ul>
+        </div>
+    }
+    }
+    else{
+     <h2>Limit execeeded</h2>
+    }
+    }
+    else{
+     <h2>no</h2>
+    }
+
+</body>
+

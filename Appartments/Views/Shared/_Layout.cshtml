@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+
+@model Appartments.Models.User
+
+<html>
+<head>
+  
+    <title>@ViewBag.Title</title>
+
+
+
+     <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/searchBar.css")">
+    
+    
+     <link rel="stylesheet" type="text/css" href="/Content/Site.css">
+    
+   
+     <script src="@Url.Content("~/Content/libraries/angular.min.js")"></script>
+     <script src="@Url.Content("~/Content/libraries/angular-route.min.js")"></script>
+
+       
+     <script src="@Url.Content("~/Content/layoutAngularJs.js")"></script>
+     
+    
+
+</head>
+<body ng-app="HomePageApp"  ng-controller="HomePageController">
+
+
+       <div  class="headerwrap">
+            <nav class="headernav">
+                <ul class="headerlinelist">
+                        
+                    <li class="tabContent">
+                        <a><strong>@Html.ActionLink("HOME", "Index", "Home")</strong>
+                        </a>
+                    </li>
+
+
+                     <li class="tabContent">
+                        <a>Edit Profile 
+                        </a>
+                    </li>
+
+                     <li class="tabContent">
+                        <a>Favorites 
+                        </a>
+                    </li>
+
+                     <li class="tabContent">
+                         <a class="logandsign">
+                             <font class="links">@Html.ActionLink("List Your Property", "AdditionForm", "AddContent")</font>
+                        </a>
+                    </li>
+                    
+                   
+                   
+
+
+                     @if (Request.IsAuthenticated) {
+                    
+                    
+                      <li  class="logandsign">
+                            <a class="logandsignlist" > @Html.ActionLink("LOG OUT", "Logout", "Home")</a>
+                          
+                      </li>
+                    
+                      <li  class="logandsign">
+                            <a class="logandsignlist" ><strong>@Html.Encode(User.Identity.Name)</strong></a>
+                          
+                      </li>
+                    
+                    
+                    
+                           
+                        }
+                        else {
+
+                    <li  class="logandsign">
+                        <a class="logandsignlist"  ng-click="signupchangefunc()"   href=""
+                          ><font  implimenter='signupchange' signchanger>SIGN UP</font></a>
+                             <ul ng-click="test()" implimenter='signupchange'  showsignup  class="signupopen">
+                                <img class="extentionsignup" src="./gfx/extention.svg"/>
+                                 
+
+                                @using (Html.BeginForm("AddUser", "Home", FormMethod.Post, new {})) 
+                                        {
+
+                                            <div class="signHead">
+                                                <li class="splitfield">
+                                                    <div class="editor">
+                                                        <span><font class="signLables">First Name</font></span><br/>
+                                                        @Html.TextBoxFor(u => u.FirstName , new { @class = "SignNameField" } )
+                                                    </div>
+                                                    <div class="editor" >
+                                                        <span class="lastNameLable"><font class="signLables">Last Name</font></span><br/>
+                                                        @Html.TextBoxFor(u => u.LastName , new { @class = "SignNameSecondField" } )
+
+                                                    </div>
+                                                </li>
+                                                    <div class="normEditor">
+                                                       <span><font class="signLables">Email</font ></span><br/>
+                                                       @Html.TextBoxFor(u => u.Email , new { @class = "SignNormField" } )
+                                                    </div>
+                                                    <div class="normEditor">
+                                                       <span><font class="signLables">Password</font></span><br/>
+                                                         @Html.PasswordFor(u => u.Password , new { @class = "SignNormField" })
+                                                    </div>
+                                                    <div class="normEditor">
+                                                        <span><font class="signLables">Re-Password</font></span><br/>
+                                                        @Html.PasswordFor(u => u.Password, new { @class = "SignNormField" })
+                                                    </div>
+
+                                                    <div class="signFooter">
+                                                            <input type="submit" class="signUpFotterButton" value="SIGN UP" />
+
+
+                                                            <a   href="" ng-click="signupchangefunc()" >
+                                                                 <font class="signsumbitfont">CANCEL</font></a>
+                                                        
+                                                        </div>
+                                               
+                                            </div>
+                                        }
+                                 
+   
+                            </ul>
+                    </li>
+                    
+                     <li  class="logandsign">
+                        <a class="logandsignlist"  ng-click="loginchangefunc()" href=""
+                          ><font  implimenter='loginchange'  logchanger >LOGIN</font></a>
+                             <ul  implimenter='loginchange'  showlogin  class="loginopen">
+                                <img class="extentionsignup" src="./gfx/extention.svg"/>
+                                 
+                                    @using (Html.BeginForm("LoginUser", "Home", FormMethod.Post, new {})) 
+                                        {
+
+                                            <div class="signHead">
+                                                
+                                                    <div class="normEditor">
+                                                       <span><font class="signLables">Email</font ></span><br/>
+                                                       @Html.TextBoxFor(u => u.Email , new { @class = "SignNormField" } )
+                                                    </div>
+                                                    <div class="normEditor">
+                                                       <span><font class="signLables">Password</font></span><br/>
+                                                         @Html.PasswordFor(u => u.Password , new { @class = "SignNormField" })
+                                                    </div>
+                                                   
+                                                
+                                                
+                                                
+                                                   
+                                                    <div class="signFooter">
+                                                            <input type="submit" class="signUpFotterButton" value="SIGN UP" />
+
+
+                                                            <a   href="" ng-click="loginchangefunc()" >
+                                                                 <font class="signsumbitfont">CANCEL</font></a>
+                                                        
+                                                        </div>
+                                               
+                                            </div>
+                                        }
+                                 
+                                 
+
+                            </ul>
+                       </li>
+                         
+                     }
+                </ul>
+            </nav>
+        </div>
+    
+    
+       <div class="searchBar">
+           
+           <ul class="searchUl">
+           
+               
+                <li class="searchBarUnit">
+                    
+                    <img  class="locationIcon" src="@Url.Content("~/gfx/location_picker.svg")">
+                
+                    <span>City</span>
+                    
+                    <img  class="downIcon" src="@Url.Content("~/gfx/down_arrow.svg")">
+               
+               
+               </li>
+               
+                
+                <div class="rightFloat">
+                
+                    <span>test</span>
+               
+               
+               </div>
+           
+           </ul>
+    
+       </div>
+
+        
+
+
+
+
+
+
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

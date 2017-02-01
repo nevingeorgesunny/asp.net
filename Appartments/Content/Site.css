@@ -1,0 +1,533 @@
+      
+   
+
+        .headernav{
+            display:inline-block;
+            width:100%;
+           
+            
+        }
+
+        .headerwrap{
+           
+           background: transparent; 
+           height: 45px;
+           width: 100%;
+           margin-top: 0px;
+           padding-top:0px;
+            
+            
+           
+            
+        }
+
+
+      
+    
+
+    
+
+
+         .logandsign a{
+             
+            text-decoration:none;
+            color:#000000;
+         }
+
+
+
+
+
+
+
+          .logandsignlist:hover  {
+                color: #ffd93c;
+                -webkit-transition: 700ms ease all;
+                -moz-transition: 700ms ease all;
+                -o-transition: 700ms ease all;
+                transition: 700ms ease all;
+          }
+
+
+
+         .logandsign{
+            border-width: 1px;
+          
+            margin-top:8px;
+            margin-right:16px;
+            list-style-type: none;
+            float:right;
+            margin-top: 6px;
+            position:relative;
+            color:#919191;
+            font-size:16px;
+            -ms-transform: translate(-0px,-12px); 
+            -webkit-transform: translate(-0px,-12px); 
+            transform: translate(-0px,-12px);
+         }
+
+
+
+.headerlinelist {
+    padding: 0px;
+
+}
+
+
+        .logo{
+            margin-left: 16px;
+            margin-top:8px;
+          
+            
+            list-style-type: none;
+            float:left;
+            margin-right: 16px;
+            margin-top: 6px;
+            position:relative;
+            color:#ffffff;
+            font-size:19px;
+            -ms-transform: translate(-0px,-16px); 
+            -webkit-transform: translate(-0px,-16px); 
+            transform: translate(-0px,-16px);
+        }
+              
+      
+
+     
+        .logo a{
+
+            font-family:'Ek Mukta';
+            
+        }
+        
+
+
+          .tabContent{
+            margin-left: 16px;
+            margin-top:8px;
+          
+            
+            
+            list-style-type: none;
+            float:left;
+            margin-right: 16px;
+            margin-top: 6px;
+            position:relative;
+            color:#ffffff;
+            font-size:19px;
+            -ms-transform: translate(-0px,-16px); 
+            -webkit-transform: translate(-0px,-16px); 
+            transform: translate(-0px,-16px);
+        }
+              
+      
+
+     
+        .tabContent a{
+            font-family:'Ek Mukta';
+            
+            text-decoration:none;
+            color:#ffffff;
+    
+            
+        }
+        
+
+
+          .tabContent:hover    {
+                color: #ffd93c;
+                -webkit-transition: 700ms ease all;
+                -moz-transition: 700ms ease all;
+                -o-transition: 700ms ease all;
+                transition: 700ms ease all;
+          }
+      
+
+
+
+
+
+           .logandsign a{
+            color:white;
+            font-family:'Ek Mukta';
+        }
+
+
+
+        .signupopen {
+           
+            
+        
+            
+            padding:1px 1px;
+            position:absolute;
+            top:100%;
+            left:0px;
+             width:450px;
+            z-index:-1;
+            
+          visibility: hidden;
+            box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+            background:#ffffff;
+            transform: translate(-90%,5%);
+          
+           
+        }
+
+
+
+        .signupform{
+           margin-top: 0;
+           background:#f1efef; 
+           float: right;   
+        }
+
+       
+
+
+        .signupopen li{
+            list-style-type: none;
+          
+            position:relative;
+        }
+
+
+        .extentionsignup{
+            float: right;
+            width: 20px;
+            z-index: -1;
+            transform: translate(-75%,-100%);
+        }
+
+
+        .signupwrap{
+           list-style-type: none;
+
+
+        }
+
+
+        .namefield{
+           
+            background: transparent;
+            margin: 10px;
+            outline: 0; background-color: transparent;
+             border: 0px solid;
+             border-bottom-width:1px;
+             color : #cfcfcf;
+            
+             outline: 0;
+             font-family:'Ek Mukta';    
+             font-size:16px;
+             height: 100%;
+             width: 186px;
+        }
+
+       .normalfiled{
+            background: transparent;
+            margin: 10px;
+         
+            outline: 0; background-color: transparent;
+             border: 0px solid;
+             border-bottom-width:1px;
+             color : #cfcfcf;
+             outline: 0;
+             font-family:'Ek Mukta';    
+             font-size:16px;
+             height: 100%;
+             width: 90%;
+        }
+
+        .splitfield{
+            padding-top:16px;
+            margin-bottom: 10px;
+            padding-left: 16px;
+          display:flex;
+        }
+
+
+        .signsumbit{
+            float:right;
+            font-size: 14px;
+            transform: translateY(-10%);
+            padding-left: 16px;
+            padding-right: 16px;
+             
+        }
+
+
+           .signupradio{
+            width: 13px;
+               padding-right:5px;
+               padding-top: 5px;
+               transform: translateY(15%);
+        
+          
+        }
+
+.signradio{
+    
+   
+    padding-right:16;
+    font-size: 14px;
+    margin-left: 16px;
+    color: #6460c4;
+    
+}
+
+
+
+.signfooter{
+    
+    padding-top:20px;
+    padding-bottom: 10px;
+    padding-left:25px;   
+     padding-right:10px;   
+}
+
+.nonsplit{
+    padding-left:16px;   
+}
+
+
+.lognonsplit{
+    padding-left:16px;
+    padding-right:16px;
+}
+
+.signtoggleclasson{
+    color:#6460c4;
+/*      -webkit-transition: 500ms ease all;*/
+/*
+            -moz-transition: 500ms ease all;
+            -o-transition: 500ms ease all;
+            transition: 500ms ease all;
+*/
+}
+
+.signtoggleclassoff{
+    color:black;
+/*
+      -webkit-transition: 500ms ease all;
+            -moz-transition: 500ms ease all;
+            -o-transition: 500ms ease all;
+            transition: 500ms ease all;
+*/
+}
+
+
+/*
+
+.signsumbit:hover .signsumbitfont {
+   
+     color:red;
+     -webkit-transition: 500ms ease all;
+     -moz-transition: 500ms ease all;
+     -o-transition: 500ms ease all;
+     transition: 500ms ease all;
+}
+*/
+
+
+
+  .loginopen {
+           list-style-type: none;
+            padding:1px 1px;
+            position:absolute;
+            top:100%;
+            left:0px;
+            
+           visibility: hidden;
+      
+            width: 400px;
+      
+        
+            height:200px;
+          
+            box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+            background:#ffffff;
+            transform: translate(-85%,9%);
+          
+           
+        }
+
+.logfooter{
+    
+    margin-top: 16px;
+    margin-right: 10px;  
+}
+
+
+ .lognormal{
+             background: transparent;
+             margin: 10px;
+             outline: 0; background-color: transparent;
+             border: 0px solid;
+             border-bottom-width:1px;
+             color : #cfcfcf;
+             outline: 0;
+              font-family:Roboto;     
+             font-size:16px;
+            
+             width:300px;
+ }
+
+
+
+
+.headercontent{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+      margin-right: auto;
+    margin-left: auto;
+    
+    text-align: center;
+   
+    
+}
+
+
+.editor{
+   
+}
+
+.SignNameField{
+   background: #ffffff;  
+  width:200px;
+    
+     font-size: 18px;
+/*         font-family:'Ek Mukta';*/
+   border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+
+
+.SignNameSecondField{
+    
+    
+    font-size: 18px;
+/*         font-family:'Ek Mukta';*/
+    margin-left:16px;
+     background: #ffffff;  
+  width:200px;
+   border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #cfcfcf;
+    
+    
+}
+
+.lastNameLable{
+    margin-left:16px;
+}
+
+
+.signLables{
+    font-size: 12px;
+     font-family:'Ek Mukta';
+}
+
+
+.SignNormField{
+    
+    
+      background: #ffffff;  
+  width:100%;
+    
+     font-size: 18px;
+/*         font-family:'Ek Mukta';*/
+   border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #cfcfcf;
+    
+}
+
+.normEditor{
+    
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 16px;
+}
+
+
+.signUpForm{
+    
+    position: relative;
+    z-index: -9999;
+}
+
+
+
+
+.signsumbitfont{
+    color: #000000;
+    
+    
+    font-size: 15px;
+    
+    float: right;
+    
+    
+    margin-top: 16px;
+    
+   
+}
+
+
+
+.signUpFotterButton{
+    
+    
+    margin-right: 16px;
+    
+    margin-top: 20px;
+    
+    margin-bottom: 20px;
+    
+    float:right;
+    
+    font-size: 15px;
+    
+    background: none;
+    
+    
+    border: none
+    
+    
+   
+   
+    
+}
+
+.signHead{
+    
+    margin-top: 20px;
+    
+}
+
+
+.links{
+    color:#ffffff;
+}
+
+
+
+/*
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*/
+
+
